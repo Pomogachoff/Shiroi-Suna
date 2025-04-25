@@ -57,6 +57,9 @@ top: 0px;
 .just-start{
     justify-content: start;
 }
+.just-end{
+    justify-content: end;
+}
 .pointer{
     cursor:pointer;
 }
@@ -79,6 +82,15 @@ top: 0px;
 }
 .r180{
     rotate: 180deg;
+}
+.r90{
+    rotate: 90deg;
+}
+.r270{
+    rotate: 270deg;
+}
+.opacity-zero{
+    opacity: 0;
 }
 .d-none{
     display: none;
