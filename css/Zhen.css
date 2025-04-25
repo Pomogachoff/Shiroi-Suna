@@ -68,10 +68,10 @@ html,body,.strel-div,.three-text,.row{height: 100vh;}
 h3, .two-Third,.three-text{font-family: Intro;}
 
 
-.First{background-image: url('../assets/main_first.png');}
-.two-First{ background-image: url('../assets/back_first.png');}
-.Second{background-image: url('../assets/main_second.png');}
-.two-Second{background-image: url('../assets/back_second.png');}
+.First{background-image: url('../assets/main_first.webp');}
+.two-First{ background-image: url('../assets/back_first.webp');}
+.Second{background-image: url('../assets/main_second.webp');}
+.two-Second{background-image: url('../assets/back_second.webp');}
 .top-strel{top: -10vh;}
 .top-strel:hover{top: 0;}
 .bottom-strel:hover{bottom: -50vh;}
@@ -95,11 +95,11 @@ h4{font-size: 5vh;}
     transition: opacity 0.3s;
 }
 .three-First{
-    background-image: url('../assets/rules_back.png');
+    background-image: url('../assets/rules_back.webp');
     background-position: center;
 }
 .three-Second{
-    background-image: url('../assets/rules_back_two.png');
+    background-image: url('../assets/rules_back_two.webp');
     background-position: center;
 }
 .strel{
@@ -108,13 +108,13 @@ h4{font-size: 5vh;}
     height:8vh;
     margin: 2vh;
 }
-.two-Second{background-image: url('../assets/back_second.png');}
+.two-Second{background-image: url('../assets/back_second.webp');}
 .defis{
-    background-image: url('../assets/rules_defis.png');  
+    background-image: url('../assets/rules_defis.webp');  
     z-index: 10;
 }
 .star{
-    background-image: url('../assets/rules_star.png');
+    background-image: url('../assets/rules_star.webp');
     z-index: 9;
     -webkit-transition: width 0.3s, height 0.3s, background-size 0.3s;
 	-moz-transition: width 0.3s, height 0.3s, background-size 0.3s;
@@ -191,7 +191,7 @@ opacity: 0.8;
     width: 55vw;
     height: 60vh;
     margin-left: 8vh;
-    background-image: url('../assets/main_third.png');
+    background-image: url('../assets/main_third.webp');
 }
 .stroke {
     z-index: 1;
