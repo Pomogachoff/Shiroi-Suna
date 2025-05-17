@@ -7,16 +7,40 @@
     <meta name="description" content="Shiroi Suna">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shiroi Suna</title>
-    <script defer src="js/bodyCheck.js"></script>
+   <!--  <script defer src="js/bodyCheck.js"></script> -->
+     <script defer src='js/mobile.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <link href="css/css.css" rel="stylesheet" type="text/css">
     <link href="css/Zhen.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="d-flex" id="bodyCheck">
-    <div class="white-scr pos-absolute"></div>
-    <div class="loader pos-absolute"></div>
-    <div id="body"></div>
+    <div class="white-scr pos-absolute d-none"></div>
+    <div class="loader pos-absolute d-none"></div>
+    <div id="body">
+
+        <div class="mobile d-flex">
+        <div class="mobile_page_one d-flex">
+            <div class="mobile_back_one pos-absolute"></div>
+            <div class="mobile_back_two pos-absolute"></div>
+            <div class="pos-absolute mobile_first"></div>
+            <p class="mobile_text_one pos-absolute margin-none">Shiroi</p>
+            <div class="mobile_second pos-absolute"></div>
+            <p class="mobile_text_two pos-absolute margin-none">Suna</p>
+        </div>
+        <div class="mobile_page_two d-flex flex-column just-center">
+            <div class="text">
+                <h4 id="h4-rules" class="margin-none">Спам</h4>
+                <p id="p-rules" class="margin-none">одинаковые сообщения/гифки если более 3 подряд сначала варн. потом же<br>бан и кик из флуда.</p>
+            </div>
+            <div class="text_strel d-flex just-center">
+                <div class="text_strel_right"></div>
+                <div class="text_strel_left"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
     <div id="forScript"></div>
 </body>
 

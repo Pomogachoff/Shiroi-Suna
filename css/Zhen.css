@@ -145,6 +145,10 @@ height: 100vh;
     background-repeat: no-repeat;
     background-size: 100vw;
     z-index: 6;
+    font-family: Intro;
+}
+.mobile_page_two .text{
+    text-align: center;
 }
 .mobile_back_two{
     z-index: 4;
@@ -168,6 +172,21 @@ height: 100vh;
  	-moz-transition: opacity 0.3s;
      transition: opacity 0.3s;
  }
+ .text_strel_right, .text_strel_left{
+    background-image: url('../assets/strel.svg');
+    width: 8vh;
+    height:8vh;
+    margin: 2vh;
+ }
+  .text_strel_right{
+    rotate: 90deg;
+  }
+  .text_strel_left{
+    rotate: -90deg;
+  }
+  .text_strel{
+    width: 100vw;
+  }
  .three-First{
      background-image: url('../assets/rules_back.webp');
      background-position: center;
