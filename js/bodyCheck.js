@@ -39,10 +39,14 @@ if(bodyCheck <= 450){
             <div class="mobile_second pos-absolute"></div>
             <p class="mobile_text_two pos-absolute margin-none">Suna</p>
         </div>
-        <div class="mobile_page_two">
-            <div>
-                <h4 id="h4-rules" class="margin-none">Спам</h4>
-                <p id="p-rules" class="margin-none">одинаковые сообщения/гифки<br>если более 3 подряд сначала варн.<br>потом же бан и кик из флуда. </p>
+        <div class="mobile_page_two d-flex flex-column just-center">
+            <div class="text d-flex flex-column alig-center">
+                <h4 class="margin-none h4-rules" id="0">Спам</h4>
+                <p class="margin-none p-rules">одинаковые сообщения/гифки если более 3 подряд сначала варн. потом же бан и кик из флуда.</p>
+            </div>
+            <div class="text_strel d-flex just-center">
+                <div class="text_strel_right"></div>
+                <div class="text_strel_left"></div>
             </div>
         </div>
     </div>`;
@@ -108,8 +112,8 @@ if(bodyCheck <= 450){
 
                     <div>
                         <h4 id="h4-rules" class="margin-none">Спам</h4>
-                        <p id="p-rules" class="margin-none">одинаковые сообщения/гифки<br>если более 3 подряд сначала
-                            варн.<br>потом же бан и кик из флуда. </p>
+                        <p id="p-rules" class="margin-none">одинаковые сообщения/гифкиесли более 3 подряд сначала
+                            варн.потом же бан и кик из флуда. </p>
                     </div>
                 </div>
 

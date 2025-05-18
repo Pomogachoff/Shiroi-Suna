@@ -119,8 +119,7 @@ height: 100vh;
 .mobile_text_two{
     z-index: 5;
     font-size: 19vh;
-    bottom: 0;
-    margin-bottom: -6%;
+    margin-top: 144%;
 }
  .mobile_back_one{
     z-index: 2;
@@ -146,6 +145,7 @@ height: 100vh;
     background-size: 100vw;
     z-index: 6;
     font-family: Intro;
+
 }
 .mobile_page_two .text{
     text-align: center;
@@ -177,6 +177,9 @@ height: 100vh;
     width: 8vh;
     height:8vh;
     margin: 2vh;
+    -webkit-transition: opacity 0.3s;
+ 	-moz-transition: opacity 0.3s;
+     transition: opacity 0.3s;
  }
   .text_strel_right{
     rotate: 90deg;
@@ -369,4 +372,19 @@ height: 100vh;
  }
  #firstPage, #secondPage, #thirdPage{
      transition: transform 1200ms linear;
-   }
+}
+.p-rules{
+    word-wrap: break-word;
+    width: 75%;
+    hyphens: auto;
+    overflow-wrap: anywhere;
+}
+.text_strel_left:active, .text_strel_right:active{
+    opacity: 0.6;
+}
+.mobile_page_one{
+    height: 100vh;
+    width: 100vw;
+    z-index: 7;
+    margin-top: 0vh;
+}
