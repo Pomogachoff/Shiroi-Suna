@@ -85,7 +85,7 @@ height: 100vh;
  .bottom-strel-2:hover{ bottom: -30vh;}
  .stroke__item {animation: running-animation 90s linear infinite;}
  .mobile_first{
-    background-image: url('../assets/mobile_first.png');
+    background-image: url('../assets/mobile_first.webp');
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -93,13 +93,13 @@ height: 100vh;
     background-size: 100vw;
 }
 .mobile_second{
-    background-image: url('../assets/mobile_second.png');
+    background-image: url('../assets/mobile_second.webp');
     height: 100vh;
     width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
-    z-index: 3;
+    z-index: 4;
 }
 .mobile_back_one, .mobile_back_two{
     height: 100vh;
@@ -115,12 +115,12 @@ height: 100vh;
 }
 .mobile_text_one{
     z-index: 4;
-    font-size: 15vh;
+    font-size: 26vw;
     top: -2%;
 }
 .mobile_text_two{
     z-index: 5;
-    font-size: 19vh;
+    font-size: 35vw;
     bottom: -3%;
 }
  .mobile_back_one{
@@ -139,7 +139,7 @@ height: 100vh;
     height: 100vh;
 }
 .mobile_page_two{
-    background-image: url('../assets/mobile_third.png');
+    background-image: url('../assets/mobile_third.webp');
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -428,4 +428,8 @@ height: 100vh;
 .text{
     backdrop-filter: blur(3px);
     padding: 2vh 0;
+}
+#secondPage, #thirdPage{
+    width: 100vw;
+    height: 100vh;
 }

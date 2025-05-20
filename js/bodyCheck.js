@@ -26,10 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 bodyCheck = window.innerWidth;
-divForScript = document.getElementById(`forScript`);
 divBody = document.getElementById(`body`);
 
-if(bodyCheck <= 450){
+if(bodyCheck <= 1300){
     divBody.innerHTML = `<div class="mobile d-flex">
         <div class="mobile_page_one d-flex">
             <div class="strel-div pos-absolute" id="strel-page-mobile-top">
@@ -60,7 +59,6 @@ if(bodyCheck <= 450){
             <a class="pos-absolute alfa" href="https://t.me/shiroisunainfo">Вернуться в телеграмм</a>
         </div>
     </div>`;
-  divForScript.innerHTML = "<script defer src=\"js/mobile.js\"></script>"; 
 }else{
     divBody.innerHTML = `<div class="pc d-flex">
         <div id="firstPage">
@@ -120,10 +118,9 @@ if(bodyCheck <= 450){
                 <div class="three-Second pos-absolute"></div>
                 <div class="three-text d-flex flex-column alig-center just-space pos-absolute">
 
-                    <div>
+                    <div style="width: 50%;">
                         <h4 id="h4-rules" class="margin-none">Спам</h4>
-                        <p id="p-rules" class="margin-none">одинаковые сообщения/гифкиесли более 3 подряд сначала
-                            варн.потом же бан и кик из флуда. </p>
+                        <p id="p-rules" class="margin-none">одинаковые сообщения/гифки если более 3 подряд сначала варн. потом же бан и кик из флуда. </p>
                     </div>
                 </div>
 
@@ -158,7 +155,7 @@ if(bodyCheck <= 450){
                 </div>
             </div>
         </div>
-        <div id="thirdPage" class="marginTOP100">
+        <div id="thirdPage" class="pos-absolute marginTOP100">
             <div class="strel-div pos-absolute" id="strel-page-3">
                 <div class="top-strel pos-relative pointer d-flex just-center pointer" id="page-2-bot">
                     <div class="strel pos-relative r180"></div>
@@ -178,5 +175,4 @@ if(bodyCheck <= 450){
             </div>
         </div>
     </div>`;
-    divForScript.innerHTML = "<script defer src=\"js/js.js\"></script>"; 
 }

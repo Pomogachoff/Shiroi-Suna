@@ -1,3 +1,5 @@
+if(bodyCheck <= 1300){
+
 const h4Rules = document.querySelector(".h4-rules");
 const pRules = document.querySelector(".p-rules");
 const leftRule = document.querySelector(`.text_strel_left`);
@@ -77,3 +79,4 @@ strelBottom.addEventListener(`click`, () => {
             },
             0).add({ targets: mobilePageTwo, translateY: clientHeight, duration: 1600, complete: () => {mobilePageOne.classList.toggle(`marginTOP100`);}, }, 0);
 });
+}
