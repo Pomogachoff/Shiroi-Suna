@@ -116,7 +116,7 @@ height: 100vh;
 .mobile_text_one{
     z-index: 4;
     font-size: 26vw;
-    top: 1%;
+    top: 3%;
 }
 .mobile_text_two{
     z-index: 5;
@@ -432,4 +432,7 @@ height: 100vh;
 #secondPage, #thirdPage{
     width: 100vw;
     height: 100vh;
+}
+.mobile .strel{
+    margin: 4vh;
 }
