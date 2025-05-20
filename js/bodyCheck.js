@@ -36,6 +36,8 @@ if(bodyCheck <= 1300){
                     <div class="strel pos-relative r180"></div>
                 </div>
             </div>
+            <div class="back-span pos-absolute">
+            </div>
             <div class="mobile_back_one pos-absolute"></div>
             <div class="mobile_back_two pos-absolute"></div>
             <div class="pos-absolute mobile_first"></div>
