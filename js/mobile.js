@@ -4,6 +4,10 @@ const leftRule = document.querySelector(`.text_strel_left`);
 const rightRule = document.querySelector(`.text_strel_right`);
 const mobilePageOne = document.querySelector(`.mobile_page_one`);
 const mobilePageTwo = document.querySelector(`.mobile_page_two`);
+const strelTop = document.getElementById(`strel-page-mobile-top`);
+const strelBottom = document.getElementById(`strel-page-mobile-bottom`);
+const clientHeight = window.innerHeight * -1.15;
+
 const rulesArr = [
     {h4:"Спам", p:"одинаковые сообщения/гифки если более 3 подрядсначала варн. потом жебан и кик из флуда."},
     {h4:"Оскорбления", p:"при оскорблении других участников в первый раз, Вам выдаётся предупреждение, в случае повторных казусов &mdash; мут на 3 часа. В случае если оскорбления перетекают в травлю, Вам выдаётся бан навсегда."},
@@ -47,31 +51,29 @@ rightRule.addEventListener("click", () => {
     }
     updateRules(ruleIndex);
 });
-
-window.addEventListener('touchmove', function(e) {
-    e.preventDefault(); // отменяем стандартное поведение браузера
-    let currentY = e.touches[0].clientY;
-    let deltaY = currentY - startY;
-
-        if (deltaY > 0) {
-            if(mobilePageOne.style.marginTop == 0){
-                anime
+strelTop.addEventListener(`click`, () => {
+    anime
         .timeline()
-        .add(
-            {
-                targets: secondPage,
+        .add({
+                targets: mobilePageTwo,
                 translateY: 0,
-                duration: 1300,
-                easing: "cubicBezier(0,0,0.6,1)",
+                duration: 1600,
                 complete: () => {
-                    secondPage.classList.toggle(`marginTOP100`);
+                    mobilePageTwo.classList.toggle(`marginTOP100`);
                 },
             },
-            0
-        )
-        .add({ targets: firstPage, translateY: clientHeight, duration: 1200, easing: "cubicBezier(0,0,0.6,1)" }, 0);
-            }
-        } else {
-            // свайп вверх
-        }
+            0).add({ targets: mobilePageOne, translateY: clientHeight, duration: 1600, complete: () => {mobilePageTwo.classList.toggle(`marginTOP100`);}, }, 0);
+});
+strelBottom.addEventListener(`click`, () => {
+    anime
+        .timeline()
+        .add({
+                targets: mobilePageOne,
+                translateY: 0,
+                duration: 1600,
+                complete: () => {
+                    mobilePageTwo.classList.toggle(`marginTOP100`);
+                },
+            },
+            0).add({ targets: mobilePageTwo, translateY: clientHeight, duration: 1600, complete: () => {mobilePageOne.classList.toggle(`marginTOP100`);}, }, 0);
 });

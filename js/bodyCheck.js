@@ -32,6 +32,11 @@ divBody = document.getElementById(`body`);
 if(bodyCheck <= 450){
     divBody.innerHTML = `<div class="mobile d-flex">
         <div class="mobile_page_one d-flex">
+            <div class="strel-div pos-absolute" id="strel-page-mobile-top">
+                <div class="bottom-strel pos-relative d-flex just-center r180 pointer" id="page-2-top">
+                    <div class="strel pos-relative r180"></div>
+                </div>
+            </div>
             <div class="mobile_back_one pos-absolute"></div>
             <div class="mobile_back_two pos-absolute"></div>
             <div class="pos-absolute mobile_first"></div>
@@ -39,7 +44,11 @@ if(bodyCheck <= 450){
             <div class="mobile_second pos-absolute"></div>
             <p class="mobile_text_two pos-absolute margin-none">Suna</p>
         </div>
-        <div class="mobile_page_two d-flex flex-column just-center">
+
+        <div class="mobile_page_two d-flex flex-column just-center marginTOP100">
+            <div class="top-strel pos-absolute pointer d-flex just-center pointer" id="strel-page-mobile-bottom">
+                    <div class="strel pos-relative r180"></div>
+            </div>
             <div class="text d-flex flex-column alig-center">
                 <h4 class="margin-none h4-rules" id="0">Спам</h4>
                 <p class="margin-none p-rules">одинаковые сообщения/гифки если более 3 подряд сначала варн. потом же бан и кик из флуда.</p>
@@ -48,6 +57,7 @@ if(bodyCheck <= 450){
                 <div class="text_strel_right"></div>
                 <div class="text_strel_left"></div>
             </div>
+            <a class="pos-absolute alfa" href="https://t.me/shiroisunainfo">Вернуться в телеграмм</a>
         </div>
     </div>`;
   divForScript.innerHTML = "<script defer src=\"js/mobile.js\"></script>"; 

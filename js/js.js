@@ -1,29 +1,3 @@
-const whiteScreen = document.querySelector(`.white-scr`);
-const loader = document.querySelector(`.loader`);
-let timerId;
-function loadIF() {
-    if (getComputedStyle(loader).opacity == 0) {
-        loader.classList.add(`d-none`);
-        clearInterval(timerId);
-    }
-}
-function addSet() {
-    timerId = setInterval(loadIF, 100);
-}
-document.addEventListener("DOMContentLoaded", function () {
-    anime({
-        targets: whiteScreen,
-        opacity: 0,
-        duration: 3000,
-        easing: "linear",
-        complete: () => {
-            whiteScreen.classList.add(`opacity-zero`);
-            whiteScreen.classList.add(`d-none`);
-            loader.classList.add(`opacity-zero`);
-            addSet();
-        },
-    });
-});
 const stars = document.querySelectorAll(".star");
 const defises = document.querySelectorAll(".defis");
 const h4Rules = document.getElementById("h4-rules");

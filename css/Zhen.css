@@ -62,6 +62,8 @@ height: 100vh;
  html,body,.strel-div,.three-text,.row{height: 100vh;}
  #h4-rules, #p-rules {
      opacity: 1;
+     -webkit-transition: opacity 0.3s linear;
+ 	-moz-transition: opacity 0.3s linear;
      transition: opacity 0.3s linear;
  }
  .three-Second,.two-Second,.Second{z-index: 2;}
@@ -114,12 +116,12 @@ height: 100vh;
 .mobile_text_one{
     z-index: 4;
     font-size: 15vh;
-    margin-top: -5%;
+    top: -2%;
 }
 .mobile_text_two{
     z-index: 5;
     font-size: 19vh;
-    margin-top: 144%;
+    bottom: -3%;
 }
  .mobile_back_one{
     z-index: 2;
@@ -132,7 +134,7 @@ height: 100vh;
     GradientType=1);
 }
 .mobile{
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
 }
@@ -159,6 +161,12 @@ height: 100vh;
     startColorstr="#000000",
     endColorstr="#000000",
     GradientType=1);
+}
+#strel-page-mobile-top{
+    z-index: 9;
+}
+#strel-page-mobile-top .bottom-strel{
+    bottom: -51vh;
 }
  .loader{
      height: 100vh;
@@ -371,6 +379,8 @@ height: 100vh;
      transform: translateY(-115vh);
  }
  #firstPage, #secondPage, #thirdPage{
+    -webkit-transition: transform 1200ms linear;
+ 	-moz-transition: transform 1200ms linear;
      transition: transform 1200ms linear;
 }
 .p-rules{
@@ -382,9 +392,40 @@ height: 100vh;
 .text_strel_left:active, .text_strel_right:active{
     opacity: 0.6;
 }
+.mobile_page_two .top-strel:active, #strel-page-mobile-top .bottom-strel:active{
+    opacity: 0.7;
+}
+.mobile_page_two .top-strel, #strel-page-mobile-top .bottom-strel{
+    -webkit-transition: opacity 0.2s;
+ 	-moz-transition: opacity 0.2s;
+     transition: opacity 0.2s;
+}
 .mobile_page_one{
     height: 100vh;
     width: 100vw;
     z-index: 7;
     margin-top: 0vh;
+}
+.mobile_page_one, .mobile_page_two{
+    -webkit-transition: transform 1000ms linear;
+ 	-moz-transition: transform 1000ms linear;
+     transition: transform 1000ms linear;
+}
+.mobile_page_two .top-strel{
+      top: -1vh;
+}
+.alfa{
+   text-align: center;
+    width: 100vw;
+    bottom: 6vh;
+    color: #000000;
+    text-decoration: none;
+    font-size: xx-large;
+    backdrop-filter: blur(3px);
+    padding: 2vh 0;
+    background-color: #fff0e887;
+}
+.text{
+    backdrop-filter: blur(3px);
+    padding: 2vh 0;
 }
