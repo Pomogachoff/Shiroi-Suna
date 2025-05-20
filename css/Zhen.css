@@ -121,7 +121,7 @@ height: 100vh;
 .mobile_text_two{
     z-index: 5;
     font-size: 35vw;
-    bottom: -3%;
+    bottom: 1%;
 }
  .mobile_back_one{
     z-index: 2;
@@ -166,7 +166,7 @@ height: 100vh;
     z-index: 9;
 }
 #strel-page-mobile-top .bottom-strel{
-    bottom: -51vh;
+    bottom: -50vh;
 }
  .loader{
      height: 100vh;
